@@ -29,7 +29,10 @@ class Miso < Formula
   end
 
   def install
-    bin.install "miso"
+    os = OS.mac? ? "darwin" : "linux"
+    arch = Hardware::CPU.arm? ? "arm64" : "amd64"
+
+    bin.install "miso-#{os}-#{arch}" => "miso"
   end
 
   test do
