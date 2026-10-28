@@ -1,30 +1,30 @@
 class Miso < Formula
   desc "The agnostic package manager"
   homepage "https://github.com/ekkolyth/miso"
-  version "0.7.1"
+  version "0.7.2"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/ekkolyth/miso/releases/download/v#{version}/miso_#{version}_darwin_arm64.tar.gz"
-      sha256 "b0938961d9ace126c5693894a29de9c6b78cc01c47e7217e24848a303779de91"
+      sha256 "cc30f2a21d72b80a10b7831407afb5ea25810e2a238091fba0c632a68c99efed"
     end
 
     on_intel do
       url "https://github.com/ekkolyth/miso/releases/download/v#{version}/miso_#{version}_darwin_amd64.tar.gz"
-      sha256 "260019e2acbc5001931b72672ba87fee3674eab3ad360837994b6417a728bffd"
+      sha256 "bb1ede092aa30835c899ba947f9c8ef1b33d23e3ba620e031f1ed18a0f5a3f8f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/ekkolyth/miso/releases/download/v#{version}/miso_#{version}_linux_arm64.tar.gz"
-      sha256 "759de51cb0d05045578eec887248aa49a54e75c201a2385137af49e6f65bc61a"
+      sha256 "8619b76ae235ec07740fc018ab45044b1b7ae81eb5605d0f9f368b2873ba41b2"
     end
 
     on_intel do
       url "https://github.com/ekkolyth/miso/releases/download/v#{version}/miso_#{version}_linux_amd64.tar.gz"
-      sha256 "226fc09a09c19e3a2dcdd50464390d73a1c76ce3653b12cafc73d2dc5b5a9d6d"
+      sha256 "d139eceeb858578ec69aeda5dd9d123c6647f3412fb5217c40df8421f2b3095b"
     end
   end
 
